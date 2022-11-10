@@ -3,6 +3,7 @@ import HouseTag from "../components/HouseTag";
 import LocalFilter from "../components/LocalFilter";
 import HousesJson from "../config/local-listings.json";
 import { useEffect, useState } from "react";
+import Header from "../components/Header";
 
 export default function LocalListings() {
   const [houseSize, setHouseSize] = useState();
@@ -36,9 +37,9 @@ export default function LocalListings() {
   return (
     <>
       <Navbar />
-      <h1 className="w-4/5 mr-auto ml-auto text-42 mt-4">Our Listings</h1>
+      <Header>Our Listings</Header>
       <LocalFilter handleSearch={handleFilter} housesArray={HousesJson} />
-      <div className="grid gap-5 lg:gap-7 sm:px-5 mt-16 w-250 ml-auto mr-auto xs:w-full" style={{ gridTemplateColumns: `repeat(auto-fit, ${houseSize / 16}rem)` }}>
+      <div className="grid gap-5 lg:gap-7 sm:px-5 mt-6 w-250 ml-auto mr-auto xs:w-full" style={{ gridTemplateColumns: `repeat(auto-fit, ${houseSize / 16}rem)` }}>
         {housesArr.map((house, i) => {
           let formatting_options = {
             style: "currency",

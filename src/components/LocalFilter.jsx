@@ -126,7 +126,7 @@ const LocalFilter = ({ handleSearch = () => {}, housesArray }) => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center mt-4 relative z-10 " style={{ gridTemplateColumns: `repeat(auto-fit, 6rem)` }}>
+    <div className="flex flex-wrap justify-center mt-5 relative z-10 " style={{ gridTemplateColumns: `repeat(auto-fit, 6rem)` }}>
       <Dropdown title={"City"} name="city" array={citiesState} updateFilter={handleDropdown} type="=" />
       <Dropdown title={"Beds"} name="beds" array={beds} updateFilter={handleDropdown} type=">=" />
       <Dropdown title={"Baths"} name="baths" array={baths} updateFilter={handleDropdown} type=">=" />

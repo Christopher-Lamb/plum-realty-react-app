@@ -36,7 +36,7 @@
 
 .spacer {
   width: clamp(4rem, 7vw, 6rem);
-  border-bottom: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--nav-color);
   margin: 1rem 0 1rem 0rem;
 }
 

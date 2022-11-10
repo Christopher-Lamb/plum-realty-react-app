@@ -3,11 +3,13 @@ import Navbar from "../../components/Navbar/Navbar";
 import LOCATION from "../../assets/plumLocation.png";
 import Footer from "../../components/Footer/Footer";
 import { Form, Input, Button, Textarea } from "../../components/Form";
+import Header from "../../components/Header";
 
 export default function Contact() {
   return (
     <>
       <Navbar />
+      <Header>Contact Us</Header>
       <section>
         <div className="w-full flex xl:mt-10 ">
           <div className=" w-full  md:w-1/2 flex p-4 flex-wrap justify-end xl:h-600">

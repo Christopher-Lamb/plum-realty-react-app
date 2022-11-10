@@ -1,32 +1,34 @@
-import { useEffect, useRef, useState } from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import { useEffect, useState } from "react";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 import LocalListingsJson from "../config/local-listings.json";
-import { useRouter } from "next/router";
-import Image from "next/image";
-import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 import { Form, Input, Button, Textarea } from "../components/Form";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
 
-export const getStaticPaths = async () => {
-  const paths = await LocalListingsJson.map((house) => ({ params: { houseId: `${house.id}` } }));
-  return {
-    paths,
-    fallback: false,
-  };
-};
+// export const getStaticPaths = async () => {
+//   const paths = await LocalListingsJson.map((house) => ({ params: { houseId: `${house.id}` } }));
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
-export const getStaticProps = async (context) => {
-  const houseId = context.params.houseId;
+// export const getStaticProps = async (context) => {
+//   const houseId = context.params.houseId;
 
-  return { props: { houseId: `${houseId}` } };
-};
+//   return { props: { houseId: `${houseId}` } };
+// };
 
-const HousePage = ({ houseId }) => {
-  const [state, setState] = useState({});
+const HousePage = () => {
+  const [state, setState] = useState({ beds: "", address: "", baths: "", sqft: "", type: "", imageUrl: "", finalPrice: "", houseId: "" });
 
   const setInfo = () => {
+    const houseId = window.location.pathname.split("/")[2];
+    const ids = LocalListingsJson.map((house) => house.id);
+
+    console.log(ids);
+
     LocalListingsJson.forEach((house) => {
       // console.log(houseId, house.id);
       // console.log(router);
@@ -41,7 +43,7 @@ const HousePage = ({ houseId }) => {
         };
         let dollarString = new Intl.NumberFormat("en-US", formatting_options);
         let finalPrice = dollarString.format(house.price);
-        setState((prevState) => ({ ...prevState, price: finalPrice }));
+        setState((prevState) => ({ ...prevState, price: finalPrice, houseId: houseId }));
       }
     });
   };
@@ -84,6 +86,7 @@ const HousePage = ({ houseId }) => {
                   { src: state.imageUrl },
                 ]}
                 style={{ width: "700px", height: "500px" }}
+                className="border"
               />
             )}
           </div>
@@ -117,7 +120,7 @@ const HousePage = ({ houseId }) => {
             <Input name="email" label="Email" className="col-span-6 md:col-span-3" required></Input>
             <Input name="phone" label="Phone" className="col-span-6 md:col-span-3" required></Input>
             <Textarea name="message" label="Questions and Conerns" />
-            <Input hidden={true} name="address-id" value={houseId} />
+            <Input hidden={true} name="address-id" value={state.houseId} />
             <Button className="p-2.5 bg-black text-white tracking-wide col-span-6 md:col-span-2">Submit</Button>
           </Form>
         </section>
