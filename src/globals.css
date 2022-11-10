@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap");
+
+
+:root {
+  --nav-color: #5c2682;
+  --secondary-color: #e5d1b8;
+  --accent-color: #874e8a;
+  --dark-color: var(--dark-color);
+  --primary-font: "Roboto Slab", serif;
+}
+html,
+body {
+  /* background-color: black; */
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.spacer {
+  width: clamp(4rem, 7vw, 6rem);
+  border-bottom: 3px solid var(--secondary-color);
+  margin: 1rem 0 1rem 0rem;
+}
+
+.spacer-no-m {
+  width: clamp(4rem, 7vw, 6rem);
+  border-bottom: 3px solid var(--nav-color);
+}

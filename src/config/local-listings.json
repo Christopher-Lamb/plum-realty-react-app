@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "city": "Camden",
+    "address": "618 N 34th St,Camden, NJ 08105",
+    "price": "150000",
+    "beds": "2",
+    "baths": "1.5",
+    "type": "House",
+    "sqft": "1999",
+    "imageUrl": "https://ap.rdcpix.com/6fa70d102db6eec1c5ef6bc28c72841fl-m32106942od-w480_h360_x2.webp"
+  },
+  {
+    "id": 2,
+    "city": "Lumberton",
+    "address": "614 Main St,Lumberton, NJ 08048",
+    "price": "389900",
+    "beds": "6",
+    "baths": "2",
+    "type": "House",
+    "sqft": "3167",
+    "imageUrl": "https://ap.rdcpix.com/8f38e3d0d24cd93572276cccae6a66acl-m123587328od-w480_h360_x2.webp"
+  },
+  {
+    "id": 3,
+    "city": "Montclair",
+    "address": "4 Hilltop Pl,Montclair, NJ 07042",
+    "price": "750000",
+    "beds": "4",
+    "baths": "2.5",
+    "type": "Condo",
+    "sqft": "9583",
+    "imageUrl": "https://ap.rdcpix.com/f1b6eac3eb688c2db615f6a5eda751d3l-m297935109od-w480_h360_x2.webp"
+  },
+  {
+    "id": 4,
+    "city": "West Belmar",
+    "address": "914 Sixth Ave,West Belmar, NJ 07719",
+    "price": "664990",
+    "beds": "3",
+    "baths": "2.5",
+    "type": "Condo",
+    "sqft": "2500",
+    "imageUrl": "https://ap.rdcpix.com/cb67323c652b71a18dcfa8f36040b008l-m188880710od-w480_h360_x2.webp"
+  },
+  {
+    "id": 5,
+    "city": "West Belmar",
+    "address": "914 Sixth Ave,West Belmar, NJ 07719",
+    "price": "664990",
+    "beds": "3",
+    "baths": "2.5",
+    "type": "Condo",
+    "sqft": "2500",
+    "imageUrl": "https://ap.rdcpix.com/cb67323c652b71a18dcfa8f36040b008l-m188880710od-w480_h360_x2.webp"
+  }
+]

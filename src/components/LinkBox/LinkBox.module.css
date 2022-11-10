@@ -1,0 +1,44 @@
+.container {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Roboto slab", serif;
+  margin: 0;
+}
+
+.text {
+  text-align: center;
+  margin: 0;
+  width: 80%;
+}
+
+.button {
+  width: 12em;
+  height: 4rem;
+  margin-top: 2rem;
+  color: white;
+  background: var(--accent-color);
+  outline: none;
+  border: none;
+  /* padding: 1rem 1rem */
+}
+.button:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+.button:active {
+  transform: translateY(2px);
+}

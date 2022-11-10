@@ -1,0 +1,42 @@
+[
+  {
+    "address": "",
+    "price": "",
+    "bath": "",
+    "sqft": "",
+    "acre-lot": "",
+    "bed": "",
+    "images": [],
+    "description": ""
+  },
+  {
+    "city": "Bridgeton",
+    "address": "152 East Ave,Bridgeton, NJ 08302",
+    "price": "119000",
+    "beds": "2",
+    "baths": "2",
+    "type": "",
+    "sqft": "2900",
+    "imageUrl": "https://ap.rdcpix.com/45c1feb094c5374a06211b27f8e30935l-m3812960289od-w480_h360_x2.webp"
+  },
+  {
+    "city": "Jersey City",
+    "address": "11 Freedom Pl,Jersey City, NJ 0730",
+    "price": "550000",
+    "beds": "3",
+    "baths": "2",
+    "type": "",
+    "sqft": "1625",
+    "imageUrl": "https://ap.rdcpix.com/18f8291fed92f64e383840ebb89fa41fl-m1259065921od-w480_h360_x2.webp"
+  },
+  {
+    "city": "Roselle",
+    "address": "126 Crane St,Roselle, NJ 07203",
+    "price": "490000",
+    "beds": "3",
+    "baths": "2.5",
+    "type": "",
+    "sqft": "4792",
+    "imageUrl": "https://ap.rdcpix.com/b7fe21c5568d464963a0660a059e5693l-m3957435014od-w480_h360_x2.webp"
+  }
+]
